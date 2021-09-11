@@ -124,6 +124,18 @@ public class Operations {
         }
         return returnArray;
     }
-
+    public boolean palindrome(String string) {
+        if(string.length() < 2) {
+            return false;
+        }
+        char[] array = string.toCharArray();
+        int n = array.length;
+        for(int i = 0; i < n; i++) {
+            if(array[i] != array[n - 1 - i]) {
+                return false;
+            }
+        }
+        return true;
+    }
 
 }

@@ -17,7 +17,13 @@ public class PrimeAnagram {
                 }
             }
         }
-
+        System.out.println("\nPalindrome and prime numbers are:");
+        //	prints prime numbers that are palindrome
+        for(int i = 0; i < primeNumbers.length; i++) {
+            if(operations.palindrome(primeNumbers[i])) {
+                System.out.println(primeNumbers[i]);
+            }
+        }
     }
 
 }
