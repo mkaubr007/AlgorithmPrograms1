@@ -31,5 +31,19 @@ public class Operations {
 
         return binaryStringArray;
     }
+    public int[] bubbleSortAscending(int[] binaryIntArray) {
+
+        int n = binaryIntArray.length;
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < (n - 1 - i); j++) {
+                if(binaryIntArray[j] > binaryIntArray[j+1]) {
+                    int temp = binaryIntArray[j];
+                    binaryIntArray[j] = binaryIntArray[j+1];
+                    binaryIntArray[j+1] = temp;
+                }
+            }
+        }
+        return binaryIntArray;
+    }
 
 }
